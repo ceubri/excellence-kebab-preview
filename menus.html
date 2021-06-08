@@ -111,12 +111,12 @@
                 <div class="silex-element-content normal">
                     <h3>tél. : 09 54 41 90 29</h3>
                 </div>
-            </div><div data-silex-type="text-element" class="editable-style silex-id-1563375715832-24 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu style-hamburger-menu" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1623097667281_516 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1623097667281_516 nav {left: -9999px;}.hamburger-menu_1623097667281_516 nav ul {margin-top: 80px;}.hamburger-menu_1623097667281_516 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1623097667281_516.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1623097667281_516 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1623097667281_516.open .nav-container {}.hamburger-menu_1623097667281_516 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1623097667281_516 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #4c4c4c; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+            </div><div data-silex-type="text-element" class="editable-style silex-id-1563375715832-24 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu style-hamburger-menu" style=""><div class="silex-element-content normal"><style>.hamburger-menu_1623166587120_641 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1623166587120_641 nav {left: -9999px;}.hamburger-menu_1623166587120_641 nav ul {margin-top: 80px;}.hamburger-menu_1623166587120_641 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1623166587120_641.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1623166587120_641 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1623166587120_641.open .nav-container {}.hamburger-menu_1623166587120_641 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1623166587120_641 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #4c4c4c; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1623097667281_516.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1623097667281_516 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1623097667281_516.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1623097667281_516.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1623097667281_516 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1623097667281_516.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1623166587120_641.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1623166587120_641 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1623166587120_641.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1623166587120_641.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1623166587120_641 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1623166587120_641.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1623097667281_516 closed">
+<div class="hamburger-menu_1623166587120_641 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -143,26 +143,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1623097667281_516').removeClass('open');
-    $('.hamburger-menu_1623097667281_516').addClass('closed');
+    $('.hamburger-menu_1623166587120_641').removeClass('open');
+    $('.hamburger-menu_1623166587120_641').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1623097667281_516').addClass('open');
-    $('.hamburger-menu_1623097667281_516').removeClass('closed');
+    $('.hamburger-menu_1623166587120_641').addClass('open');
+    $('.hamburger-menu_1623166587120_641').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1623097667281_516').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1623166587120_641').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1623097667281_516 .nav-container').css({
+    $('.hamburger-menu_1623166587120_641 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1623097667281_516 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1623166587120_641 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -469,32 +469,7 @@
 <p><b>
 </b></p>
                     </div>
-                </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1622747760428-37 fancy-border" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1622747736174-33" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1622747740413-35 style-menu" title="" style=""><div class="silex-element-content normal">
-                        <h2>Kebab chèvre miel noix  
-                        </h2>
-                        <p>+ boisson
-+ frite</p>
-                        <p>
-                            <b>
-
-
-
-
-
-</b></p><p><b><b>10,00€</b></b></p><b>
-
-
-
-
-
-</b><p></p> <h3>
-
-</h3><h3>(SEUL :<u>&nbsp; 7,00€</u>, AVEC FRITE :<u>&nbsp;8,50€</u>)</h3>
-
-
-<p><b>
-</b></p>
-                    </div></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561372074150-28 fancy-border" style="">
+                </div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1561372074150-28 fancy-border" style="">
                 
                 
                 
@@ -603,6 +578,31 @@
 
 <p><b>
 </b></p>
+                    </div></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1622747760428-37 fancy-border" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1622747736174-33" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1622747740413-35 style-menu" title="" style=""><div class="silex-element-content normal">
+                        <h2>Kebab chèvre miel noix  
+                        </h2>
+                        <p>+ boisson
++ frite</p>
+                        <p>
+                            <b>
+
+
+
+
+
+</b></p><p><b><b>10,00€</b></b></p><b>
+
+
+
+
+
+</b><p></p> <h3>
+
+</h3><h3>(SEUL :<u>&nbsp; 7,00€</u>, AVEC FRITE :<u>&nbsp;8,50€</u>)</h3>
+
+
+<p><b>
+</b></p>
                     </div></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1622746658828-25 fancy-border" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1622746644737-21" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1622746651047-23 style-menu" title="" style=""><div class="silex-element-content normal">
                         <h2>Falafel<br></h2>
                         <p>Falafel<br>+ boisson + frite
@@ -626,37 +626,7 @@
     </section><div data-silex-type="container-element" class="editable-style section-element silex-id-1622746465051-19 page-menus paged-element paged-element-visible"><div data-silex-type="container-element" class="editable-style container-element silex-id-1622746465052-20 silex-element-content website-width prevent-draggable" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1561377853788-55" style="">
                 
                 
-            <div data-silex-type="text-element" class="editable-style silex-id-1563781401457-1 text-element style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
-
-
-                    <h3>viandes<b> (au choix)</b></h3>
-                    <p>Nuggets<br>Kebab<br></p>
-                
-
-</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611782395-0 style-bandeau-text-au-choix-r" style="">
-                <div class="silex-element-content normal">
-                    <h3><u>Accompagnements</u></h3>
-                    
-                </div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563781085422-0 style-menu" style="">
-                <div class="silex-element-content normal"><p>SUPPLÉMENT (<i>1€</i>) : cheddar, feta, mozzarella</p></div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611793953-2 style-bandeau-text-au-choix-r" style="">
-                <div class="silex-element-content normal">
-                    <h3>Bulgur</h3>
-                    <p>
-                        Petite (375g) :<br><i>5,00€</i><br> Grande (500g) : <br><i>7,00€</i>
-                    </p>
-                </div>
-            </div><div data-silex-type="container-element" class="editable-style silex-id-1563612244550-3 container-element hide-on-mobile" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611788162-1 style-bandeau-text-au-choix-r" style="">
-                <div class="silex-element-content normal">
-                    <h3>Frites</h3>
-                    <p>Petite (375g) : <br><i>3,00€</i>
-                        <br>Moyenne (500g) : <br><i>5,00€</i><br> Grande assiette : <br><i>8,00€</i></p>
-                </div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593251478066-6 style-bandeau-text-au-choix-r" title="" style=""><div class="silex-element-content normal">
-                    <h3>Viandes</h3>
-                    <p>Moyenne (375g) : <br><i>5,00€</i><br> Grande (500g) :<br><i>8,00€</i></p>
-                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561377853815-57 style-menu" style="">
+            <div data-silex-type="text-element" class="editable-style text-element silex-id-1561377853815-57 style-menu" style="">
                     <div class="silex-element-content normal">
                         <h2>Menu enfant
                         </h2>
@@ -668,7 +638,14 @@
 6,20€
 </b><br></p> 
                     </div>
-                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563782438884-0 style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
+                </div><div data-silex-type="text-element" class="editable-style silex-id-1563781401457-1 text-element style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
+
+
+                    <h3>viandes<b> (au choix)</b></h3>
+                    <p>Nuggets<br>Kebab<br></p>
+                
+
+</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563782438884-0 style-bandeau-text-au-choix-r" style=""><div class="silex-element-content normal">
 
 
                     <h3>
@@ -682,12 +659,33 @@ salade
 
 carottes<br>
 
-tomates 
-
-<br><br></p>
+tomates<br></p>
                 
 
-</div></div></div></div></div><section data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561379153949-61 header style-bandeau-text-header page-menus paged-element paged-element-visible" style="">
+</div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611782395-0 style-bandeau-text-au-choix-r" style="">
+                <div class="silex-element-content normal">
+                    <h3><u>Accompagnements</u></h3>
+                    
+                </div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563781085422-0 style-menu" style="">
+                <div class="silex-element-content normal"><p>SUPPLÉMENT (<i>1€</i>) : cheddar, feta, mozzarella</p></div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593251478066-6 style-bandeau-text-au-choix-r" title="" style=""><div class="silex-element-content normal">
+                    <h3>Viandes</h3>
+                    <p>Moyenne (375g) : <br><i>5,00€</i><br> Grande (500g) :<br><i>8,00€</i></p>
+                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611793953-2 style-bandeau-text-au-choix-r" style="">
+                <div class="silex-element-content normal">
+                    <h3>Bulgur</h3>
+                    <p>
+                        Petite (375g) :<br><i>5,00€</i><br> Grande (500g) : <br><i>8,00€</i>
+                    </p>
+                </div>
+            </div><div data-silex-type="container-element" class="editable-style silex-id-1563612244550-3 container-element hide-on-mobile" style=""></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1563611788162-1 style-bandeau-text-au-choix-r" style="">
+                <div class="silex-element-content normal">
+                    <h3>Frites</h3>
+                    <p>Petite (375g) : <br><i>3,00€</i>
+                        <br>Moyenne (500g) : <br><i>5,00€</i><br> Grande assiette : <br><i>8,00€</i></p>
+                </div>
+            </div></div></div></div><section data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561379153949-61 header style-bandeau-text-header page-menus paged-element paged-element-visible" style="">
 
         <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1561379153950-62" style="">
 
@@ -712,15 +710,14 @@ tomates
                     </h3>
                     <p>cordon bleu x2<br> nuggets
                         <br> steak haché x2
-                        <br>kebab<br> poulet<br><span style="background-color: transparent;">tenders<br></span><span style="background-color: transparent;">merguez</span></p>
-                    <p><br></p>
+                        <br>kebab<br> poulet<br>tenders<br>merguez</p>
                 </div>
             </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1561381963008-75 style-bandeau-text-au-choix" style="">
                 <div class="silex-element-content normal">
                     <h3>sauces</h3>
                     <p><br></p>
                 </div>
-            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1623097491280-1 style-bandeau-text-au-choix" style=""><div class="silex-element-content normal"><p>Ketchup<br>Algérienne<br>Piment Turc<br>biggy burger<br>harissa</p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1623097441808-0 style-bandeau-text-au-choix" style=""><div class="silex-element-content normal"><p>Samouraï<br>Andalouse<br>Curry<br>Barbecue<br>Moutarde<br>Mayonnaise<br></p></div></div></div>
+            </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1623097491280-1 style-bandeau-text-au-choix" style=""><div class="silex-element-content normal"><p>Ketchup<br>Algérienne<br>Piment Turc<br>Biggy burger<br>Harissa<br>Sauce blanche (maison)<br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1623097441808-0 style-bandeau-text-au-choix" style=""><div class="silex-element-content normal"><p>Fromagère<br>Samouraï<br>Andalouse<br>Curry<br>Barbecue<br>Moutarde<br>Mayonnaise<br></p></div></div></div>
     </section><section data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561381390000-71 header style-bandeau-text-header page-menus paged-element paged-element-visible" style="">
 
         <div data-silex-type="container-element" class="editable-style silex-element-content container-element website-width silex-id-1561381390000-72" style="">
@@ -1137,10 +1134,10 @@ tomates
         </div></section><section data-silex-type="container-element" class="editable-style section-element silex-id-1593519753386-3 style-bandeau-text-header page-menus paged-element paged-element-visible"><div data-silex-type="container-element" class="editable-style container-element silex-id-1593519753386-4 website-width" title="" style="width: 1400px; min-height: 375px;"><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-5 style-bandeau-text-au-choix" title="" style="top: 14px; left: 354px; width: 653px; min-height: 62px;"><div class="silex-element-content normal">
                     <h3><u>Les assiettes sont accompagnées</u></h3>
                     <h3><br></h3>
-                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-6 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal"><p>Salades<br>Frites<br>Bulgur + 1 €<br>Végétarien 4€<br>Durum végétarien 5€<br>Belge 4€</p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-7 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal">
-                    <h3>Nos crudités</h3>
+                </div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-6 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal"><p>Salades<br>Frites<br>Bulgur (1€)<br>Végétarien (4€)<br>Durum végétarien (5€)<br>Belge (4€)</p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1593519753387-7 style-bandeau-text-au-choix" title="" style=""><div class="silex-element-content normal">
+                    <h3>Nos crudités aux choix</h3>
                     <p>
-                        Salade<br>Tomates<br>Oignons<br>Choux rouge /blanc<br>Concombre<br>Mais<br>Carottes</p>
+                        salade <br>tomate <br>oignon<br>choux <br>carotte<br>concombre<br>mais<br></p>
                 </div></div></div></section><section data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1564068108020-0 page-menus paged-element paged-element-visible" style="">
 
         
@@ -1243,7 +1240,7 @@ Petite (375g) : <br>3,00€
                     <p>
                         
 
-Petite (375g) :<br>5,00€<br> Grande (500g) : <br>7,00€
+Petite (375g) :<br>5,00€<br> Grande (500g) : <br>8,00€
 
 
                     </p>
@@ -1272,9 +1269,9 @@ Petite (375g) :<br>5,00€<br> Grande (500g) : <br>7,00€
                 <div class="silex-element-content normal">
                     <h3>Horaires
                     </h3>
-                    <p>Du mardi au jeudi......................11h30 - 13h30 et 18h - 21h30<br>Vendredi &amp; samedi......................11h30 - 13h30 et 18h - 21h30<br>Dimanche......................18h - 21h30<br>Lundi
+                    <p>Mardi, jeudi, vendredi, samedi.................11h30 - 13h30 et 18h - 21h30<br>Dimanche......................18h - 21h00<br> Mercredi
 
-...................... repos ;)</p>
+..........................11h30 à 13h30 </p>
                 </div>
             </div></div>
     </section><section data-silex-type="container-element" class="container-element editable-style section-element prevent-resizable silex-id-1561390935171-144" style="">
